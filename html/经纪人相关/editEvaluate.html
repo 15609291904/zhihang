@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表评价</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/loanee.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/editEvaluate.css">
+    <link rel="stylesheet" href="../../css/capitalInfo.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="Box">
+    <header>
+        <i class="iconfont icon-jiantou-copy"></i>
+        <h1>发表评价</h1>
+        <p class="guanli" style="color: #f6a01a;">发布</p>
+    </header>
+    <section>
+     	<div class="messCard" style="padding: 0 .04rem">
+            <textarea style="background: white;" class="textForm"  name="" id="">说说你对经纪人的看法和建议...</textarea>
+        </div>
+		<div class="tags">
+			<div class="smallTag activeSmallTag">了解需求</div>
+			<div class="smallTag">服务态度好</div>
+			<div class="smallTag">了解法律政策</div>
+			<div class="smallTag" style="margin-right: 0;">职业道德好</div>
+			<div class="smallTag">有问必答</div>
+			<div class="smallTag">速度快</div>
+		</div>
+		<div class="clickNext radio3">
+          <input type="radio" name="" id="" value="3"
+                 style="background-size: .1rem .3rem;"
+          />
+          <label for="" style="height: .25rem;">匿名</label>
+        </div>
+    	<div class="service">
+    		<div class="serDiv">
+				<span>服务态度</span> 
+    			<ul>
+    				<li class="iconfont icon-xingxing"></li>
+    				<li class="iconfont icon-xingxing"></li>
+    				<li class="iconfont icon-xingxing"></li>
+    				<li class="iconfont icon-xingxing"></li>
+    				<li class="iconfont icon-xingxing"></li>
+    			</ul>
+    		</div>
+    		<div class="serDiv">
+				<span>推荐指数</span>
+    			<ul>
+    				<li class="iconfont icon-xingxing"></li>
+    				<li class="iconfont icon-xingxing"></li>
+    				<li class="iconfont icon-xingxing"></li>
+    				<li class="iconfont icon-xingxing"></li>
+    				<li class="iconfont icon-xingxing"></li>
+    			</ul>
+    		</div>
+    	</div>
+    </section>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//点击按钮切换active样式
+		$(".smallTag").click(function(){
+			$(this).toggleClass("activeSmallTag");
+		});
+		
+		//  匿名单选框选中状态效果
+        $('.radio3 label').click(function(){
+          var radioId = $(this).attr('name');
+          if($(this).attr('class')== 'checked'){
+            $(this).removeAttr('class');
+            $('.radio3 input[type="radio"]').removeAttr('checked');
+          }else{
+            $(this).attr('class', 'checked');
+            $('#' + radioId).attr('checked', 'checked');
+          }
+        });
+	})
+</script>

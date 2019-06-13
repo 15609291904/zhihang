@@ -1,0 +1,220 @@
+section{
+	padding-bottom:.62rem ;
+}
+section .perLoan{
+    font-size:.14rem;
+    color: #111111;
+    /*line-height:.12rem;*/
+    margin-bottom: .08rem;
+    font-weight: 600;
+}
+.loanWayTag{
+    display: flex;
+    align-items: center;
+    margin-bottom: .12rem;
+}
+.loanWayTag h1{
+    width: .52rem;
+    height: .18rem;
+    font-size: .1rem;
+    line-height: .18rem;
+    color: #fce6b7;
+    border:.02rem solid #fce6b7;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    margin-right: .04rem;
+    text-align:center;
+    font-weight: 500;
+}
+.loanTotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.loanTotal h3 span{
+    display: block;
+    font-size: .2rem;
+    color: #f7a600;
+    line-height: .25rem;
+    text-align: center;
+}
+.loanTotal h3{
+    font-size: .12rem;
+    color: #959595;
+    line-height: .2rem;
+    font-weight: 500;
+    text-align:center;
+}
+.loanTotal h3 i{
+    font-style: normal;
+    text-align: center;
+}
+.loanDetialBox{
+    width: 100%;
+    -webkit-border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    border-radius: .06rem;
+    background: white;
+    margin-bottom: .2rem;
+    box-shadow: 0 0.04rem 0.06rem #e2e1e1;
+}
+.loanDetialHead{
+    width: 100%;
+    height: .44rem;
+    background: #f6a702;
+    border-top-left-radius: .06rem;
+    border-top-right-radius:.06rem ;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .16rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.loanDetialHead p{
+    font-size:.18rem ;
+    color: white;
+    line-height: .44rem;
+}
+.loanDetialHead i{
+    font-size:.16rem ;
+    color: white;
+    line-height: .44rem;
+}
+.loanDetialUl{
+    padding: .08rem .14rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.loanDetialUl li{
+    height: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.loanDetialUl li h1{
+    font-size:.14rem ;
+    color: #929292;
+    line-height: .3rem;
+    font-weight: 500;
+}
+.loanDetialUl li h2{
+    font-size:.14rem ;
+    color: #2e2e2e;
+    line-height: .3rem;
+    font-weight: 500;
+}
+.loanDetialImgBox{
+    padding:.16rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.loanDetialImgBox img{
+    width: 1.53rem;
+    min-height: 2rem;
+    border: .02rem solid #f3f3f3;
+    -webkit-border-radius: .02rem;
+    -moz-border-radius: .02rem;
+    border-radius: .02rem;
+}
+
+/*债权进度步骤条*/
+.stepUl{
+    display: flex;
+    align-items: center;
+    padding: .12rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*margin-bottom: ;*/
+}
+.stepLi{
+    font-size:.1rem ;
+    color:#aaaaaa;
+    line-height:.12rem;
+    margin-right: .12rem;
+}
+.stepLi span{
+    display: block;
+}
+.stepLi h1{
+    font-size: .12rem;
+    line-height: .16rem;
+    font-weight: 500;
+}
+.stepLi h2{
+    font-size: .1rem;
+    line-height: .16rem;
+    font-weight: 500;
+}
+.yuanLi{
+    width:.16rem ;
+    height: .16rem;
+    margin-right: .12rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.yuanLiBox{
+    width:.08rem ;
+    height: .08rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #e6e6e6;
+}
+.yuanD{
+    position: absolute;
+    width: 0;
+    height: .38rem;
+    border-right: .02rem solid #f3f3f3;
+    left: .07rem;
+    top:.14rem;
+}
+/*活跃圆*/
+.yuanActive{
+     width:.1rem ;
+     height: .1rem;
+     background: #f7a803;
+     border: .02rem solid #fbebc1;
+ }
+/*活跃圆下方歩骤条*/
+.yuanDActive{
+    top:.16rem;
+}
+/*活跃文字*/
+.stepLiActive h1{
+    font-size: .14rem;
+    color: #f7a803;
+}
+.stepLiActive h2{
+    color: #4d4d4d;
+}
+/*活跃文字审核失败*/
+.stepLiActiveLoser h1{
+    font-size: .14rem;
+    color: #ff562b;
+}
+.stepLiActiveLoser h2{
+    color: #4d4d4d;
+}
+
+/*案例展示中分割线*/
+.loanTotal b{
+	width: .02rem;
+	height: .28rem;
+	background: #f8f8f8;
+}
+
+
+
+

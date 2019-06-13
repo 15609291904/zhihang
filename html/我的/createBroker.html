@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请成为经纪人</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/loanee.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/createBroker.css">
+    <link rel="stylesheet" href="../../css/capitalInfo.css">
+</head>
+<body>
+<div class="Box" style="background: #f8f8f8">
+      <header>
+        <i class="iconfont icon-jiantou-copy"></i>
+        <h1></h1>
+        <p></p>
+      </header>
+      <section>
+        <div class="createTitle">申请成为经纪人</div>
+
+        <div class="messCard">
+          <p><span></span>所在城市 :</p>
+          <form action="" method="get">
+            <input style="width: 100%;" type="text" placeholder="请选择  省  -  市  -  区">
+            <!--<input type="hidden" v-bind:value="1,2,3"/>-->
+          </form>
+        </div>
+        <div class="messCard">
+          <!--<p><span></span>所属公司 :</p>-->
+          <!--<input type="text" value="燕大地产" style="margin-bottom: .12rem;">-->
+          <p><span></span>所属公司 :</p>
+          <div class="selectYearMonthDay radio2">
+            <div class="selectDayInput selectDayInput1">
+              <input checked type="radio" name="day1" id="" value="企业"/>
+              <label class="checked" for="">企业</label>
+            </div>
+            <div class="selectDayInput selectDayInput2">
+              <input class="radioCom" type="radio" name="day1" id="" value="个人"/>
+              <label for="">个人</label>
+            </div>
+          </div>
+          <div class="perOrpers">
+            <!--<input type="text" placeholder="如：燕大地产">-->
+            <p style="margin-top: .12rem"><span></span>所属门店组 :</p>
+            <div class="selectBox">
+              <select name="">
+                <option value="北京">朝阳 团结湖</option>
+                <option value="上海">上海</option>
+                <option value="广州">广州</option>
+                <option value="深圳">深圳</option>
+              </select>
+              <i class="iconfont icon-jiantou-copy-copy"></i>
+            </div>
+          </div>
+
+        </div>
+        <div class="messCard">
+          <p><span></span>从业资格证 :</p>
+          <div class="uploadAttach">
+            <div class="uploadAttachBox realNameImg realNameImg1">
+              <img src="../../img/bg.jpg" alt="">
+              <i class="iconfont icon-tianjia"></i>
+              <div class="realNameImgFooter">从业资格证</div>
+            </div>
+            <div class="uploadAttachBox realNameImg realNameImg2">
+              <img src="../../img/bg.jpg" alt="">
+              <i class="iconfont icon-tianjia"></i>
+              <div class="realNameImgFooter">从业资格证</div>
+            </div>
+          </div>
+        </div>
+        <div class="clickNext radio3">
+          <input type="radio" name="" id="" value="3"
+                 style="background-size: .1rem .3rem;"
+          />
+          <label for="" style="height: .25rem;">
+            	已阅读并同意
+            <a href="">《债权转让相关协议》</a>
+          </label>
+        </div>
+        <!--<button type="submit" class="next1Button fabuButton">发布</button>-->
+        <div class="next1Button fabuButton">完成</div>
+      </section>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//  所属公司单选框选中状态效果
+        $('.radio2 label').click(function () {
+          let radioId = $(this).attr('name');
+          $('.radio2 label').removeAttr('class') && $(this).attr('class', 'checked');
+          $('.radio2 input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+          $(this).siblings().attr('checked', 'checked');
+        });
+		//  已阅读并同意单选框选中状态效果
+        $('.radio3 label').click(function(){
+          var radioId = $(this).attr('name');
+          if($(this).attr('class')== 'checked'){
+            $(this).removeAttr('class');
+            $('.radio3 input[type="radio"]').removeAttr('checked');
+          }else{
+            $(this).attr('class', 'checked');
+            $('#' + radioId).attr('checked', 'checked');
+          }
+        });
+        // 点击企业个人切换内容
+        $(".selectDayInput1").click(function(){
+          $(".perOrpers").css({
+            display:"block"
+          })
+        });
+        $(".selectDayInput2").click(function(){
+          $(".perOrpers").css({
+            display:"none"
+          })
+        });
+	})
+
+</script>

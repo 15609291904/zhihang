@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+</head>
+<body style="position: relative;">
+    <div class="loginBigBox" style="width: 100%;height: 100%;position: relative;">
+    <!--头部背景+logo-->
+    <header>
+      <img src="../../img/logo.png" alt="">
+      <i class="iconfont icon-guanbi1 chacha"></i>
+    </header>
+    <!--登陆卡片-->
+    <div class="loginBox">
+      <div class="loginCard">
+        <div class="loginCardCenter">
+          <!--登录注册标签-->
+          <div class="loginRegisTag">
+            <p class="loginP">手机快捷登录</p>
+            <!--<p class="regisP">注册</p>-->
+            <!--<div class="loginLine"></div>-->
+          </div>
+          <!--登陆盒子-->
+          <div class="LBox LLBox">
+            <p style="font-size: .14rem;color: red;text-align: center;margin-bottom: .14rem;">姓名不能为空</p>
+            <div class="phoneBox LBox1">
+              <div class="LBox1-1">
+                <i class="iconfont icon-wode"></i>
+                <input type="text" placeholder="请输入您的手机号">
+              </div>
+              <i class="iconfont icon-guanbi2 rightIcon"></i>
+            </div>
+            <div class="getMaBox">
+              <div class="LBox1 yanzhengma">
+                <div class=" LBox1-1">
+                  <i class="iconfont icon-securityCode-b"></i>
+                  <input type="text" placeholder="验证码" v-model="password" style="width: .7rem;">
+                </div>
+                <i class="iconfont icon-guanbi2 rightIcon"></i>
+              </div>
+              <div class="getMa" onclick="getMa()">
+              	获取验证码
+              </div>
+            </div>
+            <div class="loginButton">
+              	登录
+            </div>
+            <div class="loginCardFooter">
+              <!--<p v-on:click="ToRegister"></p>-->
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--注册成功遮罩层-->
+    <div class="tanCard" v-show="registSuccess">
+      <i class="iconfont icon-zhengque1"></i>
+      <p>注册成功</p>
+    </div>
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/login.js"></script>
+<script type="text/javascript" src="../../js/swiper.min.js"></script>
+<script type="text/javascript">
+//	验证码倒计时
+function getMa(){
+		let btn = $('.getMa')[0];
+            // let ipt = document.getElementsByTagName('input')[0];
+            let time = 60;//定义时间变量。用于倒计时用
+            let timer = null;//定义一个定时器；
+            timer = setInterval(function(){///开启定时器。函数内执行
+              $('.getMa').css({
+                background:"#e3e3e3",
+                color:'#989898'
+              });
+              btn.disabled = true;
+              btn.innerText = time+"秒";    //点击发生后，按钮的文本内容变成之前定义好的时间值。
+              time--;//时间值自减
+              if(time ==0){     //判断,当时间值小于等于0的时候
+                $('.getMa').css({
+                  background:"#f6a702",
+                  color:'white'
+                });
+                btn.innerText='重新发送'; //其文本内容变成……点击重新发送……
+                btn.disabled = false;
+                clearInterval(timer); //清除定时器
+              }
+            },1000)
+	}
+
+</script>

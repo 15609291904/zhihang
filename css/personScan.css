@@ -1,0 +1,42 @@
+/*人像扫描页面*/
+.perScanImg{
+    width: 2.28rem;
+    height: 1.54rem;
+    margin: .28rem auto;
+}
+.notice h1{
+    font-size:.14rem;
+    line-height: .25rem;
+    display: flex;
+    align-items: center;
+}
+.notice h1 span{
+    display: inline-block;
+    width: .08rem;
+    height: .02rem;
+    background: #f39000;
+    margin-right:.05rem;
+}
+.notice h2{
+    font-size:.12rem;
+    line-height: .23rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding-left: .16rem;
+}
+/*开始检测按钮*/
+.next1Button{
+    width: 2rem;
+    height:.35rem ;
+    color: white;
+    line-height:.35rem;
+    background: #f6a702;
+    text-align: center;
+    font-size: .14rem;
+    margin:0.4rem auto 0.7rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    box-shadow: 0 0.04rem 0.08rem #f3ca8e;
+}

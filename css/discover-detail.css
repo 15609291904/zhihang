@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 26.67vw;
+}
+body{
+    height: 100%;
+    padding: 0 .12rem;
+}
+header{
+    display: flex;
+}
+header i{
+    font-size: .18rem!important;
+    margin: .07rem 0;
+}
+.discover_detail_title{
+    font-size: .18rem;
+    color: #2B2B2B;
+    font-weight: 700;
+}
+.date_box{
+    display: flex;
+}
+.date_box i{
+    font-size: .1rem;
+    margin: .075rem .035rem 0 0;
+    color: #F6A802;
+}
+.date_box span{
+    font-size: .07rem;
+    color: #2B2B2B;
+    opacity: .6;
+    padding-top: .06rem;
+}
+.discover_detail_content_intro{
+    font-size: .12rem;
+    text-indent: 2em;
+    margin-top: .14rem;
+    color: #2B2B2B;
+    opacity: .8;
+}
+.discover_detail_content_img{
+    display: flex;
+}
+.discover_detail_content_img img{
+    width: 3.51rem;
+    height: 1.58rem;
+    margin-top: .14rem;
+    border-radius: .04rem;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>本金等信息填写第一页</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/loanee.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/capitalInfo.css">
+</head>
+<body>
+<div class="Box" style="background: #f8f8f8;">
+    <header>
+      <i class="iconfont icon-jiantou-copy" @click="goback"></i>
+      <h1>填写信息</h1>
+      <p>保存</p>
+    </header>
+    <section>
+      <div class="messCard">
+        <p><span></span>本金 :</p>
+        <form action="" method="get">
+          <input class="checkNum" type="text" placeholder="￥ -">
+        </form>
+      </div>
+      <div class="messCard">
+        <p><span></span>利息 :</p>
+        <form action="" method="get">
+          <input class="checkNum" type="text" placeholder="￥ -">
+        </form>
+      </div>
+      <div class="messCard">
+        <p><span></span>借款周期 :</p>
+        <div class="selectYearMonthDay radio2">
+          <div class="selectDayInput">
+            <input checked type="radio" name="day1" id="" value="年" />
+            <label class="checked" for="">年</label>
+          </div>
+          <div class="selectDayInput">
+            <input  class="radioCom" type="radio" name="day1" id="" value="月" />
+            <label for="">月</label>
+          </div>
+          <div class="selectDayInput">
+            <input  class="radioCom" type="radio" name="day1" id="" value="日" />
+            <label for="">日</label>
+          </div>
+        </div>
+        <div class="percentBox">
+          <input class="checkNum" id="timeDate" type="text" placeholder="如 : 3 年">
+          <div class="percent dateYMD">年</div>
+        </div>
+        <!--<input  class="radioCom" id="timeDate sel_city" readonly="" type="text" >-->
+      </div>
+      <div class="messCard">
+        <p><span></span>债权发生地 :</p>
+        <form action="" method="get">
+          <input style="width: 100%;" type="text" placeholder="请选择  省  -  市  -  区">
+          <!--<input type="hidden" v-bind:value="1,2,3"/>-->
+        </form>
+      </div>
+      <div class="messCard">
+        <p><span></span>备注 :</p>
+        <textarea class="textForm"  name="" id="" placeholder="可添加其他需要展示的信息（选填）"></textarea>
+      </div>
+      <p class="tishiWord"
+         style="color:red;font-size: .14rem;text-align: center"
+      >
+        	请输入本金金额
+      </p>
+      <!--<router-link tag="div" to="/index/CapitalInfo2" class="next1Button fabuButton">下一步</router-link>-->
+      <div class="next1Button fabuButton">下一步</div>
+    </section>
+  </div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script type="text/javascript">
+$(function() {
+
+//  借款周期单选框选中状态效果
+  //  借款周期单选框选中状态效果
+          $('.radio2 label').click(function(){
+            let radioId = $(this).attr('name');
+            $('.radio2 label').removeAttr('class') && $(this).attr('class', 'checked');
+            $('.radio2 input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+            $(this).siblings().attr('checked', 'checked');
+            $('.dateYMD').html($(this).html());
+          });
+  
+});
+</script>
+

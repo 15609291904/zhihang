@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>经纪人首页</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/me.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="BigBox">
+    <!--轮播盒子（相对定位）    -->
+    <div class="slideBox">
+      <!--轮播图背景盒子-->
+      <div class="swiper-container" style="height: 2.5rem;">
+        <div class="swiper-wrapper" style="height: 2.5rem">
+          <div class="swiper-slide">
+            <img src="../../img/bg.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../../img/bg.jpg" alt="">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination" style="bottom:-30px!important;"></div>
+      </div>
+      <!--绝对定位搜索框-->
+      <div class="searchBigBox">
+        <div class="searchBox">
+          <router-link tag="div" to="/index/CitySelect" class="localDiv">
+            <i class="iconfont icon-dingwei1"></i>
+           		 西安
+          </router-link>
+          <!--<div class="searchInput">-->
+          <!--<img src="../../img/s1.jpg" alt="">-->
+          <!--<input type="text" value="输入债权名、债权编号等">-->
+          <!--</div>-->
+        </div>
+        <!--绝对定位卡片导航-->
+        <div class="cardNavBox">
+          <div class="cardNav1 sendLoan"><img src="../../img/taozhai.jpg" alt=""><span>我要讨债</span></div>
+          <div class="cardNav1 sendLoan"><img src="../../img/huanqian.jpg" alt=""><span>我要还钱</span></div>
+          <div class="cardNav1"><img src="../../img/zhaojingjiren.jpg" alt=""><span>找经纪人</span></div>
+          <div class="cardNav1"><img src="../../img/addpingtai.jpg" alt=""><span>加入平台</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="newZqBox">
+      <div class="newHead">
+        <p class="new11 newHeadActiveP">案例展示</p>
+        
+      </div>
+      <!--最新债权内容-->
+      <div class="newLoanCard">
+        
+        <div class="newCard">
+          <div class="perLoan">
+            <h1 style="display: flex;align-items: center;margin-bottom: .12rem;">
+              	个人贷1-4
+              <div class="loanWayTag">
+                <h4>文化收藏</h4>
+              </div>
+            </h1>
+            <h2>借款周期  6月</h2>
+          </div>
+
+          <div class="loanTotal">
+            <h3><span style="font-size: .2rem;">3549875</span><i style="padding-left: .08rem;">本金（元）</i></h3>
+            <b></b>
+            <h3><span>8000</span><i>利息（元）</i></h3>
+            <b></b>
+            <div class="seeDetial">接单</div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <!--遮罩层选择身份-->
+    <div class="chooseIdentity">
+      <div class="sureBox">
+        <div class="sureQst">
+	          请先认证您的个人信息<br/>
+	          才能开启相关服务
+        </div>
+        <div class="sureNoBox">
+          <p class="closeMask">取消</p>
+          <p class="routerRenzheng">确定</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--底部盒子-->
+    <footer>
+        <ul class="footerUl">
+            <li class="footerActive"><i class="iconfont icon-ziyuan"></i><span>首页</span></li>
+            <li class="shangchengLi"><i class="iconfont icon-shangcheng"></i><span>商城</span></li>
+            <li class=""><i class="iconfont icon-wode2"></i><span>我的</span></li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/swiper.min.js"></script>
+<script type="text/javascript">
+    // 轮播图
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 1500,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            }
+        });
+
+$(function(){
+        //      点击发布债权弹出遮罩层
+        $(".sendLoan").click(function(){
+          $(".chooseIdentity").fadeIn(400);
+        })
+
+        //      点击我的债权 调到选择身份遮罩层效果盒子
+        //	           点击卡片背景颜色切换
+        $(".iam").click(function(){
+          $(this).addClass("chooseCardHighlight");
+          $(this).siblings(".iam").removeClass("chooseCardHighlight");
+        });
+        //     点击关闭按钮遮罩层盒子消失
+        $(".closeMask").click(function(){
+          $(".chooseIdentity").fadeOut(400);
+        });
+        // 点击最新债权横线划到指定位置
+        $(".newHead p").each(function(){
+          $(this).click(function(){
+            $(this).addClass("newHeadActiveP");
+            $(this).siblings("p").removeClass("newHeadActiveP");
+            //          let left1 = $(this).offset().left-10;
+            let left1 = $(this).offset().left+10;
+            // console.log(left1);
+            $(".ntiao").animate({left:left1},200);
+          });
+        });
+        
+      });
+</script>

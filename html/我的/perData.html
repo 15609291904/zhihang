@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人资料</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/loanee.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/perData.css">
+    <link rel="stylesheet" href="../../css/mask.css">
+    <style type="text/css">
+    	
+    </style>
+</head>
+<body>
+<div class="Box" style="position: relative;">
+    <header>
+        <i class="iconfont icon-jiantou-copy"></i>
+        <h1>个人资料</h1>
+        <p></p>
+    </header>
+    <section>
+    	<!--头像信息卡片盒子-->
+        <div class="headCard">
+        	<div class="headCardImgBox">
+        		<div class="ImgBoxCircle"><img src="../../img/logoExample.png" alt="" /></div>
+        		<div class="nameDiv">
+        			<h1>张三</h1>
+        			<h2>135 **** **74</h2>
+        		</div>
+        	</div>
+        	<h3>个人隐私信息安全保障中</h3>
+        </div>
+        <!--头像等信息修改列表-->
+    	<ul class="meList">
+            <li class="meListLi headerChoose">
+                <p class="meListLiLeft">头像</p>
+                <p class="meListLiRight" style="display: flex;align-items: center;"><img src="../../img/logoExample.png" alt="" /><i class="iconfont icon-arrow-right-copy-copy"></i></p>
+            </li>
+            <li class="meListLi">
+                <p class="meListLiLeft">昵称</p>
+                <p class="meListLiRight"><i class="iconfont icon-arrow-right-copy-copy"></i></p>
+            </li>
+            <li class="meListLi sexChoose">
+                <p class="meListLiLeft">性别</p>
+                <p class="meListLiRight">男<i class="iconfont icon-arrow-right-copy-copy"></i></p>
+            </li>
+            <li class="meListLi">
+                <p class="meListLiLeft">个人签名</p>
+                <p class="meListLiRight"><i class="iconfont icon-arrow-right-copy-copy"></i></p>
+            </li>
+        </ul>
+    </section>
+    <!--点击头像弹出遮罩层-->
+	<div class="chooseIdentity headMask">
+		<div class="chooseIdentity1">
+			<div class="maskbottomBox">
+	    		<p>从相册中选择</p>
+	    		<p>拍照</p>
+	    		<p class="closeMask">取消</p>
+	    	</div>	
+		</div>
+    </div>
+    <!--点击性别弹出遮罩层-->
+	<div class="chooseIdentity sexMask">
+		<div class="chooseIdentity1">
+			<div class="maskbottomBox">
+	    		<p>男</p>
+	    		<p>女</p>
+	    		<p class="closeMask">取消</p>
+	    	</div>	
+		</div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script type="text/javascript">
+$(function(){
+	//点击头像弹出头像选择遮罩层
+	$(".headerChoose").click(function(){
+		$(".headMask").stop().fadeToggle(400);
+	});
+	//点击取消遮罩层消失
+	$(".closeMask").click(function(){
+		$(".headMask").stop().fadeOut(400);
+		$(".sexMask").stop().fadeOut(400);
+	});
+	//点击性别弹出头像选择遮罩层
+	$(".sexChoose").click(function(){
+		$(".sexMask").stop().fadeToggle(400);
+	});
+	
+})
+</script>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>意见反馈</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/loanee.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/capitalInfo.css">
+    <link rel="stylesheet" href="../../css/feedBack.css">
+    
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="Box">
+    <header>
+        <i class="iconfont icon-jiantou-copy"></i>
+        <h1>意见反馈</h1>
+        <p></p>
+    </header>
+    <section>
+    	<div class="createTitle"><i class="iconfont icon-tianjia"></i>添加标签</div>
+    	<ul class="feedbackTag">
+    		<li>功能意见</li>
+    		<li>预约问题</li>
+			<li>账号问题</li>
+    	</ul>
+    	<ul class="feedbackTag">
+    		<li>BUG</li>
+    		<li>延迟卡顿</li>
+			<li>其他问题</li>
+    	</ul>
+    	<div class="createTitle"><i class="iconfont icon-xiaoxi"></i>问题意见</div>
+        <textarea class="textForm"  name="" id="">输入您要提交的建议和意见</textarea>
+        <!--<button type="submit" class="next1Button fabuButton">发布</button>-->
+        <div class="createTitle"><i class="iconfont icon-dianhua"></i>联系方式</div>
+        <textarea style="height: .62rem;margin-bottom:1.1rem;" class="textForm"  name="" id="">输入您的手机/邮箱</textarea>
+        <div class="next1Button fabuButton">提交</div>
+    </section>
+
+</div>
+<!--弹出层审核盒子-->
+
+
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!--<script type="text/javascript" src="Mdate/iScroll.js"></script>-->
+<!--<script type="text/javascript" src="Mdate/Mdate.js"></script>-->
+<script type="text/javascript" src="../../js/info.js"></script>
+<script type="text/javascript">
+$(function(){
+//	反馈标签点击变色 ，再次点击恢复
+	$(".feedbackTag li").click(function(){
+//	    if($(this).hasClass("feedbackHighColor")){
+//	        $(this).removeClass("feedbackHighColor");
+//	    }else{
+//	        $(this).addClass("feedbackHighColor");
+//	    }   
+	$(this).toggleClass('feedbackHighColor');
+	});
+
+// 文本框聚焦效果
+    $(".textForm").focus(function(){
+        //获取当前文本框的值
+        var curValue=$(this).val();
+        if(curValue==this.defaultValue){
+            $(this).val("");
+        }
+    });
+    // 文本框失去焦点效果
+    $(".textForm").blur(function(){
+        var curValue=$(this).val();
+        // 如果表单中值为空
+        if(curValue==""){
+            $(this).val(this.defaultValue);
+            // 发布按钮颜色恢复
+//          $(".fabuButton").css({
+//              background:"#e3e3e3",
+//              color:"#aeaeae"
+//          });
+        }else{
+            // 发布按钮颜色改变
+//          $(".fabuButton").css({
+//              background:"#f6a702",
+//              color:"white"
+//          });
+        }
+    });
+
+})
+</script>
+

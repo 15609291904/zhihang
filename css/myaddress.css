@@ -1,0 +1,82 @@
+.createTitle{
+  font-size:.18rem ;
+  font-weight: 600;
+  color: #020202;
+  margin-bottom: .18rem;
+}
+.namePhone{
+  display: flex;
+}
+.namePhone h1{
+  margin-right:.08rem ;
+}
+.namePhone h1,h2{
+  font-size:.15rem ;
+  color:black;
+  line-height:.2rem;
+  /*font-weight: 500;*/
+  margin-bottom: .08rem;
+}
+/*.messCard{
+	padding-bottom: .04rem!important;
+}*/
+.messCard h3{
+  font-size:.12rem ;
+  color:#8a8a8a ;
+  line-height:.2rem ;
+  font-weight: 500;
+  /*border-bottom: .02rem solid #fafafa;*/
+  /*padding-bottom: .1rem;*/
+}
+.addNewAddress{
+  color: white;
+  background: #f9a700;
+  box-shadow: 0 0.04rem 0.08rem #f3ca8e;
+}
+.setDefultBoxDiv{
+  /*display: none;*/
+}
+.setDefultBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: .35rem;
+  border-top: .02rem solid #fafafa;
+  margin-top: .08rem;
+  font-size: .12rem;
+  color: #898989;
+}
+.radioBox{
+  display: flex;
+  align-items: center;
+}
+.radioBox input{
+  width: .12rem;
+  margin-right: .06rem;
+}
+.setRight{
+  display: flex;
+}
+.setRight h5{
+  font-size: .12rem;
+  font-weight: 500;
+  margin-left: .24rem;
+}
+/*文本域样式*/
+.messCard .textForm{
+	display: block;
+    width: 3.2rem;
+    height: .58rem;
+    line-height: .16rem;
+    background: #f8f8f8;
+    -webkit-border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    border-radius: .06rem;
+    font-size:.12rem ;
+    color: #d3d3d3;
+    border:0;
+    padding: .12rem .1rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

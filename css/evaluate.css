@@ -1,0 +1,84 @@
+.oneEvalueCard{
+	margin-bottom:.1rem ;
+}
+.headPhone{
+	display: flex;
+	justify-content: space-between;
+}
+.headPhoneRight{
+	font-size: .1rem;
+	color: #cfcfcf;
+}
+.headPhoneLeft{
+	display: flex;
+}
+.headPhoneLeft img{
+	width:.36rem ;
+	height: .36rem;
+	border-radius: 50%;
+	margin-right:.1rem ;
+}
+.phoneCenterBox{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.phoneCenterBox h1{
+	color: #383838;
+	font-size: .12rem;
+}
+.phoneCenterBox h2{
+	display: flex;
+	color:#f6bc61 ;
+	font-size: .1rem;
+	font-weight: normal;
+}
+.phoneCenterBox h2 p{
+	display: flex;
+}
+.phoneCenterBox h2 p i{
+	font-size: .12rem;
+	margin-right: .02rem;
+}
+.phoneCenterBox h2 span{
+	margin-left: .05rem;
+}
+.jianjian{
+	width: 0;
+	height: 0;
+	border: .1rem solid transparent;
+	border-bottom-color:white;
+	position: absolute;
+	top: -0.18rem;
+	left: .1rem;
+	z-index: 1;
+}
+.detialCard{
+	margin-top: .1rem;
+	position: relative;
+}
+.detialCard p{
+	font-size: .12rem;
+	color: #909090;
+	line-height: .18rem;
+	text-wrap: wrap;
+	font-weight: 500;
+}
+.cardCenterP2{
+	display: flex;
+}
+.cardCenterP2 h1{
+	width:auto;
+	font-size: .1rem;
+    line-height: .14rem;
+    color: #f9cf87!important;
+    border:.02rem solid #fce6b7;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    margin-right: .04rem;
+    text-align:center;
+    font-weight: 500;
+    padding: 0 .06rem;
+    box-sizing: border-box;
+}

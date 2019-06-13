@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/loanee.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/perMessage.css">
+</head>
+<body>
+<div class="Box">
+    <header>
+        <i class="iconfont icon-jiantou-copy"></i>
+        <h1></h1>
+        <p></p>
+    </header>
+    <!--横向标签ul-->
+    <ul class="messUl">
+        <li class="messLi messLi1">
+            <p class="activeMessP">个人消息</p>
+        </li>
+        <li class="messLi messLi2">
+            <p>系统消息</p>
+        </li>
+        <li class="messLi messLi3">
+            <p>活动消息</p>
+        </li>
+        <li class="messLine"></li>
+    </ul>
+    <section>
+        <div class="messTag">
+            <div>
+                <!--个人消息-->
+                <div class="liveMessBox">
+                    <div class="messCard imgMessCard">
+                    	<img class="messCardImg" src="../../img/h1.jpg" alt="" />
+                    	<div class="messCardImgRight">
+                    		<div class="messCardTitle"><h1>邢娜</h1><h2>12:48</h2></div>
+                        	<h3 style="font-weight: 600;">
+                        		<span class="h3Span1">请问您的还款日期是哪天</span>
+                        		<span class="h3Span2">3</span>
+                        	</h3>	
+                    	</div>
+                    </div>
+                    <div class="messCard imgMessCard">
+                    	<img class="messCardImg" src="../../img/h1.jpg" alt="" />
+                    	<div class="messCardImgRight">
+                    		<div class="messCardTitle"><h1>邢娜</h1><h2>昨天</h2></div>
+                        	<h3 style="font-weight: 600;">
+                        		<span class="h3Span1">请问您的还款日期是哪天</span>
+                        		<span class="h3Span2">5</span>
+                        	</h3>	
+                    	</div>
+                    </div>
+                    <div class="messCard imgMessCard">
+                    	<img class="messCardImg" src="../../img/h1.jpg" alt="" />
+                    	<div class="messCardImgRight">
+                    		<div class="messCardTitle"><h1>邢娜</h1><h2>星期二</h2></div>
+                        	<h3 style="font-weight: 600;">
+                        		<span class="h3Span1">请问您的还款日期是哪天</span>
+                        		<!--<span class="h3Span2">3</span>-->
+                        	</h3>	
+                    	</div>
+                    </div>
+                    <div class="messCard imgMessCard">
+                    	<img class="messCardImg" src="../../img/h1.jpg" alt="" />
+                    	<div class="messCardImgRight">
+                    		<div class="messCardTitle"><h1>邢娜</h1><h2>2019-3-22</h2></div>
+                        	<h3 style="font-weight: 600;">
+                        		<span class="h3Span1">请问您的还款日期是哪天</span>
+                        		<!--<span class="h3Span2">3</span>-->
+                        	</h3>	
+                    	</div>
+                    </div>
+                </div>
+                <!--系统消息-->
+                <div class="personMess blockMessBox">
+                    <div class="messCard">
+                        <div class="messCardTitle"><h1>请您核对债权信息</h1><h2>2天以前</h2></div>
+                        <h3>这里有一份与您相关的债权，请确认债权信息 >></h3>
+                        <h4>查看详情<i class="iconfont icon-arrow-right-copy-copy"></i></h4>
+                    </div>
+                </div>
+                <!--活动消息-->
+                <div class="localMess blockMessBox">
+                    <div class="messCard">
+                        <div class="messCardTitle"><h1>限时领！85折折扣券</h1><h2>2天以前</h2></div>
+                        <h3>给予你的良好信誉，每月领2张85折折券，最高10w额度，去领取 >></h3>
+                        <h4>查看详情<i class="iconfont icon-arrow-right-copy-copy"></i></h4>
+                    </div>
+                    <div class="messCard">
+                        <div class="messCardTitle"><h1>限时领！85折折扣券</h1><h2>2天以前</h2></div>
+                        <h3>给予你的良好信誉，每月领2张85折折券，最高10w额度，去领取 >></h3>
+                        <h4>查看详情<i class="iconfont icon-arrow-right-copy-copy"></i></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+    // 点击注册横线划到指定位置
+    $(function(){
+        $(".messLi").each(function(){
+            $(this).find("p").click(function(){
+                $(this).css({
+                    color:"#f58a00",
+                    fontSize:".16rem"
+                });
+                let left1 = $(this).offset().left+30;
+                // console.log(left1);
+                $(".messLine").animate({left:left1},200);
+                $(this).parent().siblings().find("p").css({
+                    color:"#c9c9c9",
+                    fontSize:".14rem"
+                });
+            });
+        });
+        $(".messLi1").click(function(){
+            $(".liveMessBox").removeClass("blockMessBox");
+            $(".liveMessBox").siblings().addClass("blockMessBox");
+        });
+        $(".messLi2").click(function(){
+            $(".personMess").removeClass("blockMessBox");
+            $(".personMess").siblings().addClass("blockMessBox");
+        });
+        $(".messLi3").click(function(){
+            $(".localMess").removeClass("blockMessBox");
+            $(".localMess").siblings().addClass("blockMessBox");
+        });
+    });
+
+</script>

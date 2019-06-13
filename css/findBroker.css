@@ -1,0 +1,120 @@
+
+/*全部/价格/评价  导航*/
+.threePass{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: .02rem;
+	position: relative;
+}
+.threePass p{
+	font-size: .14rem;
+	color: #c2c2c2;
+	line-height: .28rem;
+}
+.threePass .activeP{
+	color: #f4af2b;
+	border-bottom:.02rem solid #ef9d00;
+}
+.brokerCard{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+/*卡片左侧*/
+.cardLeft img{
+	width:.6rem;
+	height:.6rem;
+	border-radius: 50%;
+	
+}
+.cardCenterP1{
+	display: flex;
+	align-items: center ;
+	line-height: .22rem;
+	margin-bottom:.04rem ;
+}
+.cardCenterP1 h1{
+	font-size: .16rem;
+	color: #4c4c4c;
+	line-height: .22rem;
+}
+.cardCenterP1 i{
+	font-size: .2rem;
+	color: #f8a501;
+	line-height: .22rem;
+	margin-top: .05rem;
+	margin-left: .08rem;
+	margin-right: .08rem;
+}
+.cardCenterP1 h2{
+	font-size: .14rem;
+	color: #f8a501;
+	font-weight: normal;
+}
+.cardCenterP2{
+	display: flex;
+	margin-bottom: .04rem;
+}
+.cardCenterP2 h1{
+	width:auto;
+	font-size: .1rem;
+    line-height: .14rem;
+    color: #f9cf87!important;
+    border:.02rem solid #fce6b7;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    margin-right: .04rem;
+    text-align:center;
+    font-weight: 500;
+    padding: 0 .06rem;
+    box-sizing: border-box;
+    margin-bottom: .04rem;
+}
+.cardCenterP3{
+	font-size: .12rem;
+	color: #959595;
+}
+.cardRight h1{
+	font-size: .22rem;
+	color: #f59500;
+	font-weight: normal;
+}
+.cardRight h1 span{
+	font-size: .14rem;
+}
+.cardRight h2{
+	font-size:.12rem ;
+	color: #909090;
+	line-height:.2rem ;
+	font-weight: normal;
+}
+.priceB{
+	display: none;
+}
+.evaluateB{
+	display: none;
+}
+.priceBox{
+	position: absolute;
+	width: 100%;
+	/*height: 3.5rem;*/
+	background: white;
+	top: .28rem;
+	left: 0;
+	text-align: center;
+}
+.priceBoxUl{
+	text-align: center;
+	padding: .1rem 0;
+}
+.priceBoxUl li{
+	font-size: .14rem;
+	color: #464646;
+	line-height: .34rem;
+	font-weight: 600;
+}
+.priceBox{
+	display: none;
+}

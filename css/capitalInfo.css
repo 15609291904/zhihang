@@ -1,0 +1,271 @@
+/*body父元素相对定位（便于弹出层遮罩层绝对定位）*/
+.Box{
+    position: relative;
+}
+/*表单中字体颜色是灰色*/
+.messCard input{
+    color: #7a7a7a;
+}
+
+/*百分比表单*/
+.percentBox{
+	position: relative;
+	display:flex;
+}
+.percent{
+	font-size: .16rem;
+	color: #7a7a7a;
+	line-height: .32rem;
+	position: absolute;
+	left: 1.14rem;
+	/*top: ;*/
+}
+
+.likeInput{
+    width: 2.08rem;
+    height: .32rem;
+    line-height: .32rem;
+    background: #f8f8f8;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    font-size:.12rem ;
+    color: #7a7a7a;
+    display: block;
+    border:0;
+    padding: 0 .2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.messCard .textForm{
+    width: 3.2rem;
+    height: 1rem;
+    line-height: .16rem;
+    background: #f8f8f8;
+    -webkit-border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    border-radius: .06rem;
+    font-size:.12rem ;
+    color: #7a7a7a;
+    border:0;
+    padding: .12rem .2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+/*上传附件盒子*/
+.uploadAttach{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: .06rem;
+}
+.uploadAttachBox{
+  position: relative;
+    width: 1.52rem;
+    height: .9rem;
+    background: #f8f8f8;
+    -webkit-border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    border-radius: .06rem;
+    font-size:.22rem ;
+    color: #f7b226;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  margin-bottom: .1rem;
+}
+.uploadAttachBox i{
+  font-size: .25rem;
+  z-index: 2;
+}
+.uploadAttachBox img{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: .06rem;
+  -moz-border-radius: .06rem;
+  border-radius: .06rem;
+  display: none;
+}
+.uploadAttachWord{
+    font-size: .12rem;
+    color: #444444;
+    line-height: .22rem;
+    text-align: center;
+}
+.uploadAttachWord span{
+    color: #f7b226;
+}
+.clickNext{
+    color: #909090;
+    font-size: .15rem;
+    height: .25rem;
+}
+.clickNext a{
+    display: inline-block;
+    color: #f6b966;
+}
+/*发布按钮*/
+.fabuButton{
+    width: 2rem;
+    height:.35rem ;
+    color: #aeaeae;
+    line-height:.35rem;
+    background: #e3e3e3;
+    text-align: center;
+    font-size: .14rem;
+    margin:0.4rem auto 0.7rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    box-shadow: 0 0 0;
+}
+
+/*弹出层*/
+.checkBox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    /*display: none;*/
+    z-index: 3;
+}
+.checkCard{
+    width:2.7rem ;
+    height: 3.48rem;
+    background: white;
+    -webkit-border-radius: .14rem;
+    -moz-border-radius: .14rem;
+    border-radius: .14rem;
+    margin:1.54rem auto 0;
+    padding: .42rem .35rem .5rem;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.checkCard img{
+    width:1.72rem ;
+    height:1.15rem ;
+    margin: 0 auto;
+    margin-bottom:.14rem ;
+}
+.checkCard h1{
+    font-size: .16rem;
+    color: #4b4b4b;
+    line-height:.28rem ;
+    font-weight: 500;
+    margin-bottom: .08rem;
+}
+.checkCard h2{
+    font-size:.12rem ;
+    color: #f8b245;
+    line-height: .18rem;
+    font-weight: 500;
+    margin-bottom: .24rem;
+}
+.checkCard p{
+    width: 2rem;
+    height: .36rem;
+    background: #f6a702;
+    color: white;
+    font-size: .12rem;
+    line-height:.36rem;
+    text-align:center;
+    margin: 0 auto;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    box-shadow: 0 0.04rem 0.08rem #f3ca8e;
+}
+.checkBox i{
+    position: absolute;
+    bottom: -0.65rem;
+    left: 1.16rem;
+    color: white;
+    font-size: .4rem;
+}
+.selectYearMonthDay{
+	display: flex;
+	align-items: center;
+	margin-bottom: .16rem;
+}
+.selectDayInput{
+	font-size: .16rem;
+	color: #898989;
+	margin-right: .4rem;
+	line-height: .16rem;
+}
+.selectDayInput input{
+	display: inline-block;
+	width: .16rem;
+	height: .16rem;
+	margin-right: .05rem;
+}
+
+/*单选框样式修改*/
+input[type="radio"]{
+  margin: .06rem .06rem 0 .15rem;
+  display: none;
+}
+label {
+  padding-left: .2rem;
+  background: url(../img/radio7.png) no-repeat left top;
+  background-size: .15rem .45rem;
+  height: .2rem;
+}
+label.checked {
+  color: #f8a710;
+  background-position: left bottom;
+}
+
+
+/*实名认证realName*/
+.realNameImg{
+  width: 3.2rem;
+  height:2rem;
+}
+.realNameImg1{
+  /*background:url(../img/iden1.png);*/
+  background-size:3.2rem 2rem;
+}
+.realNameImg2{
+  /*background:url(../img/iden2.png);*/
+  background-size:3.2rem 2rem;
+}
+.realNameImg3{
+  background:url(../img/iden3.png);
+  background-size:3.2rem 2rem;
+}
+.realNameImg i{
+  font-size: .46rem;
+}
+.realNameImgFooter{
+  width:3.2rem;
+  height: .46rem;
+  background: #f7b226;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  line-height: .46rem;
+  border-bottom-left-radius:.06rem ;
+  border-bottom-right-radius:.06rem ;
+
+}
+
+

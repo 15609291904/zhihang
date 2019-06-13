@@ -1,0 +1,200 @@
+/*头部背景+logo*/
+header{
+    width: 100%;
+    height: 1.85rem;
+    background: url("../img/bg1.png");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    /*border-bottom-left-radius: 5%;*/
+    /*border-bottom-right-radius:5%;*/
+    padding-top: .44rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header img{
+    width:.7rem ;
+    height: .7rem;
+    margin: auto;
+    /*margin-top: .44rem;*/
+}
+.chacha{
+  color: white;
+  font-size: .2rem;
+  position: absolute;
+  top: 0.32rem;
+  left: 0.12rem;
+}
+/*登陆卡片*/
+.loginBox{
+    position: relative;
+    width: 100%;
+}
+.loginCard{
+    position: absolute;
+    left:0;
+    top: -0.4rem;
+    width: 100%;
+    /*height: 3.32rem;*/
+}
+.loginCardCenter{
+    width:3.5rem ;
+    /*height: 3.32rem;*/
+    background: white;
+    box-shadow:0 .05rem .05rem #cccccc;
+    -webkit-border-radius: .05rem;
+    -moz-border-radius: .05rem;
+    border-radius: .05rem;
+    margin: 0 auto;
+}
+
+/*登陆注册标签*/
+.loginRegisTag{
+    width: 100%;
+    /*background: white;*/
+    height: .58rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #f8f8f8;
+}
+.loginRegisTag p{
+    font-size:.22rem;
+}
+.regisP{
+    color: #c0c0c0;
+}
+.loginP{
+    color: #f6a802;
+}
+/*登陆注册标签下方横线*/
+.loginLine{
+    width: .2rem;
+    height: .03rem;
+    background: #f39200;
+    position: absolute;
+    left: .78rem;
+    bottom: 0;
+}
+
+/*登陆模块*/
+.LBox{
+    width: 100%;
+    /*height: 2.72rem;*/
+    border-bottom-right-radius: .05rem;
+    border-bottom-left-radius: .05rem;
+    background: #ffffff;
+    padding: .28rem .18rem 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.LBox1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .28rem;
+    background: #f8f8f8;
+    height: .45rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    padding: 0 .16rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.LBox11{
+    width: 3.16rem;
+}
+.passwordBox{
+    margin-bottom: .35rem;
+}
+.LBox1-1{
+	display: flex;
+}
+.LBox1-1 i{
+    font-size:.18rem ;
+    color: #cfcfcf;
+    margin-right: .12rem;
+    line-height:.5rem ;
+}
+.rightIcon{
+    font-size:.18rem ;
+    color: #f59e00;
+    /*margin-right: .12rem;*/
+    line-height:.5rem ;
+    display: none;
+}
+.LBox1-1 input{
+    font-size:.14rem ;
+    color: #cfcfcf;
+    outline: none;
+    border: none;
+    background:transparent ;
+}
+/*!*input框中placeholder字体颜色兼容*!*/
+/*input::-webkit-input-placeholder{*/
+    /*color:#cfcfcf;*/
+/*}*/
+/*input::-moz-placeholder{   !* Mozilla Firefox 19+ *!*/
+    /*color:#cfcfcf;*/
+/*}*/
+/*input:-ms-input-placeholder{  !* Internet Explorer 10-11 *!*/
+    /*color:#cfcfcf;*/
+/*}*/
+/*登陆按钮*/
+.loginButton{
+    width: 3.16rem;
+    height:.45rem ;
+    font-size: .16rem;
+    background: #e3e3e3;
+    color: #8f8f8f;
+    line-height:.45rem ;
+    text-align: center;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    border-radius: .25rem;
+    border: 1px solid #dfdfdf;
+}
+.loginCardFooter{
+    width: 100%;
+    height: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-right-radius: .05rem;
+    border-bottom-left-radius: .05rem;
+}
+.loginCardFooter p{
+    font-size:.12rem ;
+    color: #f8bb5a;
+}
+.yanzhengma{
+    width: 1.96rem;
+}
+
+.getMaBox{
+    display: flex;
+}
+.getMa{
+    background: #f6a702;
+    width: 1.02rem;
+    height: .4rem;
+    line-height: .4rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    padding: 0 .12rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: .14rem;
+    color: white;
+    text-align: center;
+    margin-left: .16rem;
+}
+/*注册盒子隐藏*/
+.RBox{
+    display: none;
+}

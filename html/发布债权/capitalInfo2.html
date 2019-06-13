@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>本金等信息填写第二页</title>
+	<link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/loanee.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/capitalInfo.css">
+</head>
+<body>
+	<div class="Box" style="background: #f8f8f8;">
+    <header>
+      <i class="iconfont icon-jiantou-copy"></i>
+      <h1>填写信息</h1>
+      <p>保存</p>
+    </header>
+    <section>
+      <div class="messCard">
+        <p><span></span>上传附件 :</p>
+        <div class="uploadAttach" style="flex-direction: row">
+          <div class="uploadAttachBox"><i class="iconfont icon-tianjia"></i></div>
+        </div>
+        <div class="uploadAttachWord">
+	          请上传<span>真实、完整、内容清晰可辨</span>的抵押物图片或借据<br/>
+	          请认真确认后提交，以免影响认证结果<br/>
+	          拍摄时请注意遮挡签名等重要信息，防止信息泄露<br/>
+	          拍摄时请注意反光<br/>
+        </div>
+      </div>
+      <div class="messCard">
+        <p><span></span>是否设为隐私 :</p>
+        <div class="selectYearMonthDay radio1">
+          <div class="selectDayInput chooseSc">
+            <input checked type="radio" name="day1" id="" value="是" />
+            <label class="checked" for="">是</label>
+          </div>
+          <div class="selectDayInput chooseSc">
+            <input type="radio" name="day1" id="" value="否" />
+            <label for="">否</label>
+          </div>
+        </div>
+      </div>
+      <div class="messCard">
+        <p><span></span>是否选择经纪人 :</p>
+        <div class="selectYearMonthDay radio2">
+          <div class="selectDayInput chooseBr">
+            <input checked type="radio" name="day2" id="" value="是" />
+            <label class="checked" for="">是</label>
+          </div>
+          <div class="selectDayInput chooseBr">
+            <input type="radio" name="day2" id="" value="否" />
+            <label for="">否</label>
+          </div>
+        </div>
+      </div>
+      <div class="clickNext radio3">
+        <input type="radio" name="" id="" value="3"
+               style="background-size: .1rem .3rem;"
+        />
+        <label for="" style="height: .25rem;">
+          已阅读并同意
+          <a href="">《债权转让相关协议》</a>
+        </label>
+      </div>
+      <!--<button type="submit" class="next1Button fabuButton">发布</button>-->
+      <div class="next1Button fabuButton">下一步</div>
+    </section>
+    <!--点击发布弹出审核发布框-->
+    <div class="checkBox">
+      <div class="checkCard">
+        <img src="../../img/checkCard1.jpg" alt="">
+        <h1>您的发布资料正在审核中</h1>
+        <h2>审核结束后，我们会及时反馈结果<br/>请稍后再试~</h2>
+        <p>返回</p>
+        <i class="iconfont icon-guanbi closeCheckBox"></i>
+      </div>
+    </div>
+  </div>	
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script type="text/javascript">
+$(function() {
+//	是否设为隐私单选框选中状态效果
+        $('.radio1 label').click(function(){
+          var radioId = $(this).attr('name');
+          $('.radio1 label').removeAttr('class') && $(this).attr('class', 'checked');
+          $('.radio1 input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+        });
+//  是否选择经纪人单选框选中状态效果
+        $('.radio2 label').click(function(){
+          var radioId = $(this).attr('name');
+          $('.radio2 label').removeAttr('class') && $(this).attr('class', 'checked');
+          $('.radio2 input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+        });
+//  已阅读并同意单选框选中状态效果
+        $('.radio3 label').click(function(){
+          var radioId = $(this).attr('name');
+          if($(this).attr('class')== 'checked'){
+            $(this).removeAttr('class');
+            $('.radio3 input[type="radio"]').removeAttr('checked');
+          }else{
+            $(this).attr('class', 'checked');
+            $('#' + radioId).attr('checked', 'checked');
+          }
+        });
+
+      });
+</script>

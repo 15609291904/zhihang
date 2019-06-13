@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 26.67vw;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: .44rem;
+    background: rgb(248, 248, 248);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .12rem;
+    line-height: .44rem;
+    box-sizing: border-box;
+}
+header i{
+    font-size: 0.18rem;
+    color: #6f6f6f;
+}
+header span{
+    font-size: 0.16rem;
+    color: black;
+    font-weight: 800;
+}
+header p {
+    font-size: 0.16rem;
+    color: #c6c6c6;
+    min-width: 0.2rem;
+}
+.reg_agree{
+    overflow-y: auto;
+    flex: 1;
+    /* background: rgb(248, 248, 248); */
+    font-size: .07rem;
+    padding: 0 .12rem;
+}
+.reg_agree .reg_agree_title{
+    font-size: .15rem;
+    text-align: center;
+    margin: .1rem;
+}
+.reg_agree p{
+    text-indent: 2em;
+}
+.reg_agree .blod_font{
+    font-weight: 800;
+}

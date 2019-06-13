@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择经纪人</title>
+		<link rel="stylesheet" href="../../css/common.css">
+	    <link rel="stylesheet" href="../../css/loanee.css">
+	    <link rel="stylesheet" href="../../font/iconfont.css">
+	    <link rel="stylesheet" href="../../css/findBroker.css">
+	    <link rel="stylesheet" href="../../css/chooseBroker.css">
+	    <link rel="stylesheet" href="../../css/mask.css">
+	</head>
+<body>
+	<div class="Box" style="background: #f8f8f8;">
+	    <header>
+	      <i class="iconfont icon-jiantou-copy"></i>
+	      <h1></h1>
+	      <p style="color: #f6a70a;">跳过</p>
+	    </header>
+	    <section>
+	    	<div class="createTitle">选择经纪人</div>
+			<!--一个卡片-->
+			<div class="messCard brokerCardCheck">
+				<!--左侧复选框-->
+				<input type="checkbox" id="awesome" />
+				<label for="awesome" class="brokerCardCheck1">
+					<!--卡片左侧-->
+			        <div class="cardLeft"><img src="../../img/h1.jpg" alt="" /></div>
+			        <!--卡片中间-->
+			        <div class="cardCenter">
+			        	<div class="cardCenterP1">
+			        		<h1>尚雯婕</h1>
+			        		<i class="iconfont icon-mingpian"></i>
+			        		<h2>4.5分</h2>
+			        	</div>
+			        	<div class="cardCenterP2">
+			        		<h1>了解需求</h1>
+			        		<h1>了解法律政策</h1>
+			       		</div>
+			        	<div class="cardCenterP3">擅长处理个人贷和企业贷</div>
+			        </div>
+			        <!--竖线-->	
+	        		<div class="xian"></div>
+			        <!--卡片右侧-->
+			        <div class="cardRight">
+			        	<h1><span>￥</span>500</h1>
+			        	<h2>定金（元）</h2>
+			        </div>
+				</label>
+				
+	      	</div>
+	      	<!--一个卡片-->
+	    	
+	    </section>
+    	<div class="bottomSend">
+    		发送请求
+    	</div>
+    	<!--点击更新进度弹出审核发布框-->
+		<div class="checkBox">
+		    <div class="checkCard">
+		        <img src="../../img/sure.jpg" alt="">
+		        <h1>发送成功</h1>
+		        <h2>请求已发送，请耐心等待经纪人接单</h2>
+		        <div class="srueBtn"><p>查看订单</p><p>返回首页</p></div>	
+		        <i class="iconfont icon-guanbi closeCheckBox"></i>
+		    </div>
+		</div>  
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script>
+	$(function(){
+		//点击发送请求弹出框弹出
+		$(".bottomSend").click(function(){
+			$(".checkBox").fadeToggle(300)
+		});
+		
+	})
+</script>

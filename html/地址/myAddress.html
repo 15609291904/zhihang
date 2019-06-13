@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通讯地址</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/loanee.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../css/myaddress.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="Box">
+    <header>
+        <i class="iconfont icon-jiantou-copy"></i>
+        <h1></h1>
+        <p class="guanli">添加通讯地址</p>
+    </header>
+    <section>
+        <div class="createTitle">通讯地址</div>
+        <div class="messCard">
+            <div class="namePhone"><h1>张三</h1><h2>135 **** **74</h2></div>
+            <h3>内蒙古自治区呼和浩特市新城区东库街三番检查机构</h3>
+            <!--管理设置默认地址-->
+            <div class="setDefultBoxDiv">
+	            <div class="setDefultBox">
+	            	<div class="radioBox"><input type="radio" name="set" value=""/>设为默认</div>
+	            	<div class="setRight">
+	            		<h5>编辑</h5>
+	            		<h5>删除</h5>
+	            	</div>
+	            </div>
+            </div>
+        </div>
+        <div class="messCard">
+            <div class="namePhone"><h1>张三</h1><h2>135 **** **74</h2></div>
+            <h3>内蒙古自治区呼和浩特市新城区东库街三番检查机构</h3>
+            <div class="setDefultBoxDiv">
+	            <div class="setDefultBox">
+	            	<div class="radioBox"><input type="radio" name="set" value=""/>设为默认</div>
+	            	<div class="setRight">
+	            		<h5>编辑</h5>
+	            		<h5>删除</h5>
+	            	</div>
+	            </div>
+            </div>
+        </div>
+     
+    </section>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!--<script type="text/javascript" src="../../js/info.js"></script>-->
+<script type="text/javascript">
+	$(function(){
+//		点击管理出现设置默认地址
+		$(".guanli").click(function(){
+			$(".setDefultBoxDiv").fadeToggle(100);
+			if($(".setDefultBoxDiv").css("display")=="block"){
+				$(".messCard").css({
+					"padding-bottom":"0"
+				});
+			}else{
+				$(".messCard").css({
+					"padding-bottom":"0.16rem"
+				});
+			}
+			if($(".messCard").css("padding-bottom")=="0"){
+				$(".messCard").css({
+					"padding-bottom":"0.16rem"
+				});
+			}else{
+				$(".messCard").css({
+					"padding-bottom":"0"
+				});
+			}
+		});
+		
+	})
+</script>

@@ -1,0 +1,179 @@
+.headCard{
+  width: 3.52rem;
+  height: 1.26rem;
+  -webkit-border-radius: .1rem;
+  -moz-border-radius: .1rem;
+  border-radius: .1rem;
+  background:#f8a700;
+  padding: .12rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: .2rem;
+  box-shadow: 0 0.04rem 0.08rem #f3ca8e;
+}
+.headCardImgBox{
+  display: flex;
+  align-items: center;
+  margin-bottom: .18rem;
+}
+.headCardImgBox img{
+  width:.62rem;
+  height: .62rem;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.ImgBoxCircle{
+  border-radius: 50%;
+  border: .02rem solid white;
+  margin-right: .12rem;
+}
+.headCardImgBox h1{
+  font-size: .2rem;
+  line-height: .28rem;
+  font-weight: 500;
+  color: white;
+}
+.headCardImgBox h2{
+  font-size:.16rem;
+  line-height:.22rem;
+  font-weight:500;
+  color: white;
+}
+.headCard h3{
+  font-size:.14rem;
+  /*line-height:.22rem;*/
+  font-weight:500;
+  color: white;
+}
+./*我的发布列表*/
+.meList{
+  width: 100%;
+  height: auto;
+  /*background: #ac0;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.meListLi{
+  width: 100%;
+  height: .46rem;
+  border-bottom: .02rem solid #fafafa;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .12rem;
+  border-radius:.05rem;
+  -moz-border-radius:.05rem;
+  -webkit-border-radius:.05rem;
+  margin-bottom: .12rem;
+  box-shadow: 0 0.04rem 0.08rem #ededed;
+}
+/*列表左侧*/
+.meListLiLeft{
+  font-size: .14rem;
+  color:#313038;
+  font-weight: 600;
+}
+.meListLiLeft i{
+  font-size: .2rem;
+  margin-right: .1rem;
+}
+/*列表右侧*/
+.meListLiRight{
+  font-size: .14rem;
+  color:#9d9d9d;
+  position: relative;
+}
+.meListLiRight i{
+  font-size: .14rem;
+  color:#9d9d9d;
+  margin-left:.08rem ;
+}
+/*列表右侧小红点*/
+.meListLiRight span{
+  width:.05rem ;
+  height: .05rem;
+  background: #fe2f00;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.16rem;
+  top: 0;
+}
+.meListLiRight img{
+  width: .34rem;
+  height: .34rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/*头像和编辑资料*/
+.headerPic{
+  width: 100%;
+  display: flex;
+  /*background: antiquewhite;*/
+  height: .62rem;
+  margin-bottom: .2rem;
+}
+.headerPic img{
+  width: .62rem;
+  height: .62rem;
+  margin-right: .16rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.headerPicBox{
+  width: 2.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerPicBoxLeft p{
+  font-size: .2rem;
+  color: #313038;
+  margin-bottom: .08rem;
+  font-weight: 600;
+}
+.headerPicBoxLeft span{
+  display: block;
+  font-size: .12rem;
+  color:#f59000;
+  display: flex;
+}
+.headerPicBoxLeft span img{
+  width: .12rem;
+  height: .12rem;
+  display: inline-block;
+  margin-right: .04rem;
+}
+.headerPicBoxRight p{
+  font-size: .12rem;
+  color:#9c9c9c;
+}
+.headerPicBoxRight i{
+  margin-left: .06rem;
+}
+
+/*退出登录按钮*/
+.next1Button{
+  width: 2rem;
+  height:.35rem ;
+  color: white;
+  line-height:.35rem;
+  background: #f9a801;
+  text-align: center;
+  font-size: .14rem;
+  margin:0.42rem auto 0.7rem;
+  -webkit-border-radius: .2rem;
+  -moz-border-radius: .2rem;
+  border-radius: .2rem;
+  box-shadow: 0 0.04rem 0.08rem #f3ca8e;
+}

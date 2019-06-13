@@ -1,0 +1,87 @@
+.tags{
+	display: flex;
+	flex-wrap: wrap;	
+	/*justify-content: space-between;*/
+	border-bottom: .02rem solid #f2f2f2;
+}
+.smallTag{
+	margin-right: .06rem;
+	margin-bottom: .16rem;
+}
+
+input[type="checkbox"] + label::before {
+    content: "\a0";  /*不换行空格*/
+    display: inline-block;
+    /*vertical-align: .2em;*/
+    width: .15rem;
+    height: .15rem;
+    /*margin-right: .1rem;*/
+    border-radius: .1rem;
+    background-color: silver;
+    text-align: center;
+    font-size: .1rem;
+}
+input[type="checkbox"]:checked + label::before {
+    /*content: "\2713";*/
+    font-size: .12rem;
+    background-color: #f8a501;
+}
+input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+input[type="checkbox"]:focus + label::before {
+    /*box-shadow: 0 0 .01rem .01rem #58a;*/
+}
+input[type="checkbox"]:disabled + label::before {
+    background-color: gray;
+    box-shadow: none;
+    color: #555;
+}
+
+.messCard .textForm{
+    width: 3.2rem;
+    height: 1rem;
+    line-height: .16rem;
+    background: #f8f8f8;
+    -webkit-border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    border-radius: .06rem;
+    font-size:.12rem ;
+    color: #7a7a7a;
+    border:0;
+    padding: .12rem .2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+.radio3{
+	height: .44rem!important;
+	line-height: .44rem!important;
+	border-bottom: .02rem solid #f2f2f2;
+	margin-bottom: .12rem!important;
+}
+.serDiv{
+	display: flex;
+	align-items: center;
+	height: .32rem;
+}
+.serDiv span{
+	font-size:.16rem ;
+	color: #595959;
+	line-height: .32rem;
+	margin-right:.08rem ;
+	font-weight: 600;
+}
+.serDiv ul{
+	display: flex;
+	align-items: center;
+}
+.serDiv ul li{
+	color:#f8a600 ;
+	font-size:.18rem ;
+	margin-right: .02rem;
+	margin-top: .04rem;
+}
+

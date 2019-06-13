@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>找经纪人</title>
+		<link rel="stylesheet" href="../../css/common.css">
+	    <link rel="stylesheet" href="../../css/loanee.css">
+	    <link rel="stylesheet" href="../../font/iconfont.css">
+	    <link rel="stylesheet" href="../../css/findBroker.css">
+	</head>
+<body>
+	<div class="Box" style="background: #f8f8f8;">
+    <header>
+      <i class="iconfont icon-jiantou-copy"></i>
+      <h1>经纪人</h1>
+      <p></p>
+    </header>
+    <div class="threePass">
+    	<p class="activeP allP">全部</p>
+    	<p class="priceP">价格<i class="iconfont icon-jiantou-copy-copy"></i></p>
+    	<p class="evaluateP">评价<i class="iconfont icon-jiantou-copy-copy"></i></p>
+    	<!--按价格排序弹框-->
+		<div class="priceBox">
+			<ul class="priceBoxUl">
+				<li>不限</li>
+				<li>≤1000元</li>
+				<li>1000-1500元</li>
+				<li>1500-2000元</li>
+				<li>2000-2500元</li>
+				<li>2500-3000元</li>
+				<li>0元-不限</li>
+			</ul>
+			<div class="next1Button fabuButton" 
+				 style="color:white;
+				 		margin:0 auto .2rem ;
+				 		background: #e3e3e3;background: #f7a803;
+				 		box-shadow: 0 0.04rem 0.08rem #f3ca8e;"
+			>确认</div>
+		</div>
+    </div>
+    <section>
+    <!-------------------------------------------------------全部-->
+	<div class="allB">
+		<!--一个卡片-->
+		<div class="messCard brokerCard">
+			<!--卡片左侧-->
+	        <div class="cardLeft"><img src="../../img/h1.jpg" alt="" /></div>
+	        <!--卡片中间-->
+	        <div class="cardCenter">
+	        	<div class="cardCenterP1">
+	        		<h1>尚雯婕</h1>
+	        		<i class="iconfont icon-mingpian"></i>
+	        		<h2>4.5分</h2>
+	        	</div>
+	        	<div class="cardCenterP2">
+	        		<h1>了解需求</h1>
+	        		<h1>了解法律政策</h1>
+	       		</div>
+	        	<div class="cardCenterP3">擅长处理个人贷和企业贷</div>
+	        </div>
+	        <!--竖线-->	
+	        <div class="xian"></div>
+	        <!--卡片右侧-->
+	        <div class="cardRight">
+	        	<h1><span>￥</span>500</h1>
+	        	<h2>定金（元）</h2>
+	        </div>
+      	</div>
+      	<!--一个卡片-->
+	</div>
+    <!-------------------------------------------------------价格-->  
+    <div class="priceB" >
+      	<!--一个卡片-->
+		<div class="messCard brokerCard">
+			<!--卡片左侧-->
+	        <div class="cardLeft"><img src="../../img/h1.jpg" alt="" /></div>
+	        <!--卡片中间-->
+	        <div class="cardCenter">
+	        	<div class="cardCenterP1">
+	        		<h1>尚雯婕</h1>
+	        		<i class="iconfont icon-mingpian"></i>
+	        		<h2>4.5分</h2>
+	        	</div>
+	        	<div class="cardCenterP2">
+	        		<h1>了解需求</h1>
+	        		<h1>了解法律政策</h1>
+	       		</div>
+	        	<div class="cardCenterP3">擅长处理个人贷和企业贷</div>
+	        </div>
+	        <!--卡片右侧-->
+	        <div class="cardRight">
+	        	<h1><span>￥</span>500</h1>
+	        	<h2>定金（元）</h2>
+	        </div>
+      	</div>
+      	<!--一个卡片-->
+	</div>
+    <!-------------------------------------------------------评价-->
+    <div class="evaluateB">
+		<!--一个卡片-->
+		<div class="messCard brokerCard">
+			<!--卡片左侧-->
+	        <div class="cardLeft"><img src="../../img/h1.jpg" alt="" /></div>
+	        <!--卡片中间-->
+	        <div class="cardCenter">
+	        	<div class="cardCenterP1">
+	        		<h1>尚雯婕</h1>
+	        		<i class="iconfont icon-mingpian"></i>
+	        		<h2>4.5分</h2>
+	        	</div>
+	        	<div class="cardCenterP2">
+	        		<h1>了解需求</h1>
+	        		<h1>了解法律政策</h1>
+	       		</div>
+	        	<div class="cardCenterP3">擅长处理个人贷和企业贷</div>
+	        </div>
+	        <!--卡片右侧-->
+	        <div class="cardRight">
+	        	<h1><span>￥</span>500</h1>
+	        	<h2>定金（元）</h2>
+	        </div>
+      	</div>
+      	<!--一个卡片-->
+	</div>  
+    </section>
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script>
+	$(function(){
+		//点击全部/价格/评价 分别显示不同内容
+		$(".allP").click(function(){
+			$(".allB").css({display:"block"});
+			$(".priceB").css({display:"none"});
+			$(".evaluateB").css({display:"none"});
+			//点击全部弹出选择价格弹框消失
+			$(".priceBox").stop().slideUp(300);
+		});
+		$(".priceP").click(function(){
+			$(".allB").css({display:"none"});
+			$(".priceB").css({display:"block"});
+			$(".evaluateB").css({display:"none"});
+			//点击价格弹出选择价格弹框
+			$(".priceBox").stop().slideToggle(300);
+		});
+		$(".evaluateP").click(function(){
+			$(".allB").css({display:"none"});
+			$(".priceB").css({display:"none"});
+			$(".evaluateB").css({display:"block"});
+			//点击评价弹出选择价格弹框消失
+			$(".priceBox").stop().slideUp(300);
+		});
+		//点击全部/价格/评价 颜色 底边框改变
+		$(".threePass p").click(function(){
+			$(this).addClass("activeP");
+			$(this).siblings().removeClass("activeP");
+		});
+		
+	})
+</script>

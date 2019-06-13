@@ -1,0 +1,242 @@
+
+body{
+    position: relative;
+    background:white ;
+}
+
+/*头部*/
+header{
+    width: 100%;
+    height: .64rem;
+    background: white;
+    padding: .2rem .12rem 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header i{
+    font-size: .2rem;
+    color: #f8a400;
+}
+/*主体*/
+section{
+    width:100% ;
+    height: calc(100% - 0.64rem);
+    padding: 0 .12rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.headerPic{
+    width: 100%;
+    display: flex;
+    /*background: antiquewhite;*/
+    height: .62rem;
+    margin-bottom: .2rem;
+}
+.headerPic img{
+    width: .62rem;
+    height: .62rem;
+    margin-right: .16rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.headerPicBox{
+    width: 2.72rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerPicBoxLeft p{
+    font-size: .2rem;
+    color: #0c0c0c;
+    margin-bottom: .08rem;
+}
+.headerPicBoxLeft span{
+    display: flex;
+    /*align-items: center;*/
+    font-size: .12rem;
+    color:#f59000;
+}
+.headerPicBoxLeft span i{
+	display: block;
+	margin-right:.06rem ;
+}
+.headerPicBoxLeft span img{
+    width: .12rem;
+    height: .12rem;
+    display: inline-block;
+    margin-right: .04rem;
+}
+.headerPicBoxRight p{
+    font-size: .12rem;
+    color:#9c9c9c;
+}
+.headerPicBoxRight i{
+    margin-left: .06rem;
+}
+/*余额、积分、账单资料卡*/
+.billCard{
+    display: flex;
+    background: #f6a702;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    height: .63rem;
+    -webkit-border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    border-radius: .06rem;
+    margin-bottom:.2rem ;
+    box-shadow: 0 0.04rem 0.08rem #f3ca8e;
+}
+.billCardLi{
+    text-align: center;
+}
+.billCardLi p{
+    font-size:.16rem;
+    color: white;
+    margin-bottom: .04rem;
+}
+.billCardLi span{
+    display: block;
+    font-size:.14rem;
+    color: white;
+}
+
+/*我的发布列表*/
+.meList{
+    width: 100%;
+    height: auto;
+    padding:0 .12rem;
+    /*background: #ac0;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.meListLi{
+    width: 100%;
+    height: .46rem;
+    border-bottom: .02rem solid #fafafa;
+    background: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*列表左侧*/
+.meListLiLeft{
+	display: flex;
+    font-size: .14rem;
+    color:#11101c;
+}
+.meListLiLeft i{
+    font-size: .2rem;
+    margin-right: .1rem;
+}
+.meListLiLeft img{
+	width: .16rem;
+	height: .18rem;
+	margin-right: .1rem;
+}
+/*列表右侧*/
+.meListLiRight{
+    font-size: .14rem;
+    color:#9d9d9d;
+    position: relative;
+}
+.meListLiRight i{
+    font-size: .14rem;
+    color:#9d9d9d;
+    margin-left:.08rem ;
+}
+/*列表右侧小红点*/
+.meListLiRight span{
+    width:.05rem ;
+    height: .05rem;
+    background: #fe2f00;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.16rem;
+    top: 0;
+}
+
+.i-fabu{
+    color: #f7a400;
+}
+.i-renzheng{
+    color: #9d9bef;
+}
+.i-shenqing{
+    color: #82e0c0;
+}
+.i-xiaoxi{
+    color: #ffd661;
+}
+.i-kabao{
+    color: #ff7e9a;
+}
+.i-women{
+    color: #57a2f8;
+}
+.i-kefu{
+    color: #d1a1f5;
+}
+.i-jiedan{
+	color: #9c9aee;
+	font-size: .17rem!important;
+}
+
+
+/*底部*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .5rem;
+    background: #f8f8f8;
+    padding: .08rem 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footerUl{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footerUl li{
+    text-align: center;
+}
+.footerUl li i{
+    display: block;
+    font-size:.18rem ;
+    color: #8d8d8d;
+    margin-bottom:-.02rem;
+}
+.footerUl li span{
+    display: block;
+    font-size:.12rem ;
+    color: #8d8d8d;
+}
+/*.footerUl .footerActive i{*/
+    /*color: #f6a702;*/
+/*}*/
+/*.footerUl .footerActive span{*/
+    /*color: #f6a702;*/
+/*}*/
+.footerUl .shangchengLi i{
+    font-size: .22rem;
+    margin-bottom:-.05rem;
+}
+

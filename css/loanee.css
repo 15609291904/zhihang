@@ -1,0 +1,159 @@
+.Box{
+    width: 100%;
+    height: 100%;
+    /*background: pink;*/
+    padding:0 .12rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height:.64rem;
+    /*background:white;*/
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top:.2rem ;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header i{
+    font-size:.18rem;
+    color: #6f6f6f;
+}
+header h1{
+    font-size:.16rem;
+    color: black;
+}
+header p{
+    font-size:.16rem;
+    color: #c6c6c6;
+}
+section::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+    /*background-color: #F5F5F5;*/
+}
+section{
+    width: 100%;
+    height: calc(100% - 0.64rem);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/*债务人信息填写卡片*/
+.messCard{
+    width: 100%;
+    height: auto;
+    padding: 0.16rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: white;
+    -webkit-border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    border-radius: .06rem;
+    box-shadow: 0 0.04rem 0.06rem #e2e1e1;
+    margin-bottom: .2rem;
+}
+.messCard p span{
+    display: inline-block;
+    width:.08rem ;
+    height: .02rem;
+    background:#f6a702 ;
+    margin-right: .06rem;
+}
+.messCard p{
+    font-size: .16rem;
+    color: #000;
+    margin-bottom: .12rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.messCard input{
+    width: 1.36rem;
+    height: .32rem;
+    background: #f8f8f8;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    font-size:.14rem ;
+    color: #7a7a7a;
+    display: block;
+    border:0;
+    padding: 0 .2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*标签卡片按钮*/
+.tagButtonCard{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tagButtonCard3{
+	display: flex;
+    flex-wrap: wrap;
+}
+/*诉求的模块多选*/
+.messCard .tagButtonCard3 p{
+    font-size: .12rem;
+    width: auto;
+    height:.25rem ;
+    background: #f8f8f8;
+    color: #d0d0d0;
+    padding:0 .12rem ;
+    line-height:.25rem ;
+    -webkit-border-radius: .15rem;
+    -moz-border-radius: .15rem;
+    border-radius: .15rem;
+    margin-right:.1rem;
+    font-weight: 100;
+}
+/*债权种类单选*/
+.messCard .tagButtonCard p{
+    font-size: .12rem;
+    width: auto;
+    height:.25rem ;
+    background: #f8f8f8;
+    color: #d0d0d0;
+    padding:0 .12rem ;
+    line-height:.25rem ;
+    -webkit-border-radius: .15rem;
+    -moz-border-radius: .15rem;
+    border-radius: .15rem;
+    margin-right:.1rem;
+    font-weight: 100;
+}
+/*.tagButtonCard12 p:first-child{*/
+    /*color: white;*/
+    /*background: #f6a702;*/
+/*}*/
+.tag3Highlight{
+	  color: white!important;
+    background: #f6a702!important;
+}
+.tagButtonCard1{
+    border-bottom: .02rem solid #f9f9f9;
+    margin-bottom: .12rem;
+}
+
+.next1Button{
+    width: 2rem;
+    height:.35rem ;
+    color: #aeaeae;
+    line-height:.35rem;
+    background: #e3e3e3;
+    text-align: center;
+    font-size: .14rem;
+    margin:0.4rem auto 0.7rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    /*box-shadow: 0 0.04rem 0.08rem #f3ca8e;*/
+}

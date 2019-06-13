@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 26.67vw;
+}
+html,body{
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+header{
+    width: 100%;
+    height: .44rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: .44rem;
+    box-sizing: border-box;
+    padding: 0 .06rem;
+}
+header i{
+    font-size: 0.18rem!important;
+    color: #6f6f6f;
+}
+header h1{
+    font-size: 0.16rem;
+    color: black;
+    font-weight: 800;
+}
+.casebox{
+    flex: 1;
+    overflow-y: auto;
+    padding: .04rem .06rem 0;
+}
+.case_content{
+    width: 3.51rem;
+    height: .95rem;
+    background: rgba(255,255,255,1);
+    box-shadow: 1px 1.732px 10px 0px rgba(186,186,186,0.33);
+    margin: 0 auto .12rem;
+    border-radius: .06rem;
+}
+.case_title{
+    width: 100%;
+    display: flex;
+}
+.case_title_name{
+    font-size: .06rem;
+    margin: .08rem .03rem 0 .06rem;
+    color: #2B2B2B;
+    opacity: .8;
+}
+.case_title_id{
+    font-size: .06rem;
+    color: #2B2B2B;
+    opacity: .8;
+    margin: .085rem .05rem 0 0;
+}
+.case_title_type{
+    display: flex;
+    width: .49rem;
+    height: .14rem;
+    background:#fff;
+    border-radius: .09rem;
+    opacity: .3;
+    margin-top: .075rem;
+    border: 1px solid #F7A400;
+}
+.case_title_type span{
+    font-size: .085rem; 
+    color: rgba(246,168,2,1);
+    line-height: .14rem;
+    text-align: center;
+
+}
+.caseInfo{
+    width: 100%;
+    display: flex;
+}
+.caseInfo_capital_box,.caseInfo_Interest_box,.caseInfo_BorrowingCycle_box{
+    width: 1.17rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.caseInfo_capital{
+    font-size: .25rem;
+    color: #F6A802;
+    margin: .07rem 0 .04rem 0;
+}
+.caseInfo_capital_title,.caseInfo_Interest_title,.caseInfo_BorrowingCycle_title{
+    color: #2B2B2B;
+    font-size: .12rem;
+    font-family: PingFang SC Bold;
+}
+.caseInfo_Interest,.caseInfo_BorrowingCycle{
+    font-size: .3rem;
+    color: #F6A802;
+    margin: 0 0 .04rem 0;
+}
+.caseInfo_BorrowingCycle span{
+    font-size: .15rem;
+}
+.caseInfo_line{
+    width: 2px;
+    height: .25rem;
+    opacity: 0.1;
+    /* background: #000; */
+    margin-top: .18rem;
+    background: rgba(103, 93, 93, 0.38);
+}

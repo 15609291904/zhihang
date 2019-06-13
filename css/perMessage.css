@@ -1,0 +1,110 @@
+.messUl{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 0 .16rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.messLi{
+    margin-bottom:.06rem;
+}
+.messLi p{
+    font-size:.14rem;
+    color: #c9c9c9;
+    line-height:.2rem ;
+}
+.messLi .activeMessP{
+    color: #f58a00;
+    font-size: .16rem;
+}
+/*标签下方横线*/
+.messLine{
+    position: absolute;
+    bottom: 0;
+    left: .34rem;
+    width: .25rem;
+    height: .02rem;
+    background: #f5a600;
+}
+.blockMessBox{
+    display: none;
+}
+
+/*消息卡片内容*/
+.messCardTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.messCardTitle h1{
+    font-size: .16rem;
+    color: #121212;
+    line-height: .26rem;
+    font-weight: 600;
+}
+.messCardTitle h2{
+    font-size: .10rem;
+    color: #c6c6c6;
+    line-height: .2rem;
+    font-weight: 500;
+}
+.messCard h3{
+    font-size: .12rem;
+    color: #959595;
+    line-height: .2rem;
+    font-weight: 100;
+    text-wrap: normal;
+    border-bottom: .02rem solid #fbfbfb;
+    padding-bottom: .06rem;
+    display: flex;
+    justify-content: space-between;
+}
+.messCard .h3Span2{
+	width:.18rem ;
+	height: .18rem;
+	border-radius: 50%;
+	background:#fd4f0d;
+	color: white;
+	text-align: center;
+	line-height: .18rem;
+	font-weight: normal;		
+}
+.messCard h4{
+    font-size: .12rem;
+    color: #959595;
+    line-height: .4rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+.messCard h4 i{
+    font-size: .14rem;
+    color: #9c9c9c;
+    line-height: .3rem;
+    font-weight: 500;
+}
+.messCardTitle h2 i{
+    font-size: .14rem;
+    color: #9c9c9c;
+    line-height: .3rem;
+    font-weight: 500;
+}
+
+.messCard{
+	padding-bottom: 0!important;
+}
+.imgMessCard{
+	display:flex;
+}
+.messCardImgRight{
+	width:calc(100% - .48rem);
+}
+.messCardImg{
+	width:.36rem ;
+	height: .36rem;
+	margin-right: .12rem;
+	border-radius: 50%;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发布详情</title>
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/loanee.css">
+		<link rel="stylesheet" href="../../font/iconfont.css">
+		<link rel="stylesheet" href="../../css/capitalInfo.css">
+		<link rel="stylesheet" href="../../css/loanDetial.css">
+		<link rel="stylesheet" href="../../css/mask.css">
+	</head>
+
+	<body>
+		<div class="Box" style="background: #f8f8f8">
+			<header>
+				<i class="iconfont icon-jiantou-copy" @click="goback"></i>
+				<h1>详情</h1>
+				<p><i class="iconfont icon-fenxiang"></i></p>
+			</header>
+			<section>
+				<!--<div class="perLoan">个人经营贷10532-46</div>-->
+				<div class="messCard">
+					<!--<div class="loanWayTag">
+			            <h1>短期借款</h1>
+			            <h1>等额本息</h1>
+			        </div>-->
+					<div class="loanTotal">
+						<h3><span>3205.2</span><i style="padding-left: .08rem;">本金（元）</i></h3>
+						<b></b>
+						<h3><span>4652</span><i>利息</i></h3>
+						<b></b>
+						<h3><span style="margin-bottom: 0.02rem;">3 <b style="font-size: .12rem;font-weight:normal;">年</b></span><i>借款周期</i></h3>
+					</div>
+				</div>
+				<div class="loanDetialBox">
+					<div class="loanDetialHead">
+						<p>债权详情</p>
+						<i class="iconfont icon-jiantou-copy-copy-copy deicon1"></i>
+					</div>
+					<ul class="loanDetialUl showDetialBox">
+						<li>
+							<h1>债权人</h1>
+							<h2>张三</h2></li>
+						<li>
+							<h1>债权人联系方式</h1>
+							<h2>18645623145</h2></li>
+						<li>
+							<h1>债务人</h1>
+							<h2>李四</h2></li>
+						<li>
+							<h1>债务人联系方式</h1>
+							<h2>15684562345</h2></li>
+						<li>
+							<h1>债权种类</h1>
+							<h2>个人/文化收藏</h2></li>
+						<li>
+							<h1>期望还款需求</h1>
+							<h2>提货卡</h2></li>
+						<li>
+							<h1>债权发生地</h1>
+							<h2>北京</h2></li>
+						<li>
+							<h1>发布日期</h1>
+							<h2>2019-02-20</h2></li>
+						<li>
+							<h1>债权编号</h1>
+							<h2>156352-54</h2></li>
+					</ul>
+				</div>
+				<div class="loanDetialBox">
+					<div class="loanDetialHead">
+						<p>附件图片</p>
+						<i class="iconfont icon-jiantou-copy-copy-copy deicon1"></i>
+					</div>
+					<div class="loanDetialImgBox showDetialBox">
+						<img src="" alt="">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="loanDetialBox">
+					<div class="loanDetialHead">
+						<p>债权进度</p>
+						<i class="iconfont icon-jiantou-copy-copy-copy deicon1"></i>
+					</div>
+					<div class="showDetialBox">
+						<ul class="stepUl">
+							<li class="stepLi">
+								<p>01-20</p><span>10:51</span></li>
+							<li class="yuanLi">
+								<div class="yuanLiBox"></div>
+								<div class="yuanD"></div>
+							</li>
+							<li class="stepLi">
+								<h1>已发布</h1>
+								<h2>债权人张三已发布债权信息</h2></li>
+						</ul>
+						<ul class="stepUl">
+							<li class="stepLi">
+								<p>01-20</p><span>10:51</span></li>
+							<li class="yuanLi">
+								<div class="yuanLiBox"></div>
+								<div class="yuanD"></div>
+							</li>
+							<li class="stepLi">
+								<h1>已发布</h1>
+								<h2>债权人张三已发布债权信息</h2></li>
+						</ul>
+						<ul class="stepUl">
+							<li class="stepLi">
+								<p>01-20</p><span>10:51</span></li>
+							<li class="yuanLi">
+								<div class="yuanLiBox yuanActive"></div>
+								<div class="yuanD yuanDActive"></div>
+							</li>
+							<li class="stepLi stepLiActive">
+								<h1>经纪人磋商</h1>
+								<h2>经纪人冯文飞135 **** 1654正在和您协商</h2>
+							</li>
+						</ul>
+						<ul class="stepUl">
+							<li class="stepLi">
+								<p>01-20</p><span>10:51</span></li>
+							<li class="yuanLi">
+								<div class="yuanLiBox yuanActive"></div>
+								<div class="yuanD yuanDActive"></div>
+							</li>
+							<li class="stepLi stepLiActiveLoser">
+								<h1>审核失败</h1>
+								<h2>经纪人冯文飞135 **** 1654正在和您协商</h2></li>
+						</ul>
+						<ul class="stepUl">
+							<li class="stepLi">
+								<p>01-20</p><span>10:51</span></li>
+							<li class="yuanLi">
+								<div class="yuanLiBox"></div>
+								<div class="yuanD"></div>
+							</li>
+							<li class="stepLi">
+								<h1>处理完成</h1>
+								<h2></h2></li>
+						</ul>
+					</div>
+				</div>
+
+				<!--接单按钮-->
+				<div 	class="next1Button fabuButton"
+						style="box-shadow: 0 0.04rem 0.08rem #f3ca8e;background: #f7a803;color: white;"
+				>接单</div>
+			</section>
+			<!--yesOrNo-->
+			<div class="yesOrNoCard">
+				<div class="noCard">不是</div>
+				<div class="yesCard sureAbout">是</div>
+			</div>
+		</div>
+		<!--弹出层审核盒子-->
+		<div class="chooseIdentity">
+	        <div class="sureBox">
+	            <div class="sureQst">
+		                                 确认这份债权与您相关<br/>
+	            </div>
+	            <div class="sureNoBox">
+	            	<p class="closeMask">取消</p>
+	            	<p class="routerRenzheng">确定</p>
+	            </div>
+	      </div>
+    	</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".sureAbout").click(function(){
+			$(".chooseIdentity").fadeToggle(300);
+		});
+		$(".closeMask").click(function(){
+			$(".chooseIdentity").fadeOut(300);
+		});
+	})
+</script>

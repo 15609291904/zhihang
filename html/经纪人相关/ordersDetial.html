@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单详情</title>
+		<link rel="stylesheet" href="../../css/common.css">
+	    <link rel="stylesheet" href="../../css/loanee.css">
+	    <link rel="stylesheet" href="../../font/iconfont.css">
+	    <link rel="stylesheet" href="../../css/findBroker.css">
+	    <link rel="stylesheet" href="../../css/index.css">
+	    <link rel="stylesheet" href="../../css/ordersDetial.css">
+	</head>
+<body>
+<div class="Box" style="background: #f8f8f8;">
+    <header>
+      <i class="iconfont icon-jiantou-copy"></i>
+      <h1>订单详情</h1>
+      <p><i class="iconfont icon-fenxiang"></i></p>
+    </header>
+    <section>
+    	<div class="topState">
+			<div class="topStateLeft">
+				<h1>等待经纪人接单</h1>
+				<h2>剩23小时59分自动关闭</h2>
+			</div>
+			<img class="topStateRightImg" src="../../img/sure1.png" alt="" />
+    	</div>
+    	<!--已选经纪人标题-->
+    	<div class="newHead">
+	        <p class="new11 newHeadActiveP">已选经纪人</p>
+	    </div>
+    	<!--已选经纪人卡片-->
+    	<div class="messCard">
+			<div class="brokerCard brokerCard1">
+				<!--卡片左侧-->
+		        <div class="cardLeft"><img src="../../img/h1.jpg" alt="" /></div>
+		        <!--卡片中间-->
+		        <div class="cardCenter">
+		        	<div class="cardCenterP1">
+		        		<h1>尚雯婕</h1>
+		        		<i class="iconfont icon-mingpian"></i>
+		        		<h2>4.5分</h2>
+		        	</div>
+		        	<div class="cardCenterP2">
+		        		<h1>了解需求</h1>
+		        		<h1>了解法律政策</h1>
+		       		</div>
+		        	<div class="cardCenterP3">擅长处理个人贷和企业贷</div>
+		        </div>
+		        <!--竖线-->	
+		        <div class="xian"></div>
+		        <!--卡片右侧-->
+		        <div class="cardRight">
+		        	<h1><span>￥</span>500</h1>
+		        	<h2>定金（元）</h2>
+		        </div>
+	      	</div>
+    	</div>
+    	<!--已选经纪人卡片-->
+    	<!--已选经纪人卡片-->
+    	<div class="messCard">
+			<div class="brokerCard brokerCard1">
+				<!--卡片左侧-->
+		        <div class="cardLeft"><img src="../../img/h1.jpg" alt="" /></div>
+		        <!--卡片中间-->
+		        <div class="cardCenter">
+		        	<div class="cardCenterP1">
+		        		<h1>尚雯婕</h1>
+		        		<i class="iconfont icon-mingpian"></i>
+		        		<h2>4.5分</h2>
+		        	</div>
+		        	<div class="cardCenterP2">
+		        		<h1>了解需求</h1>
+		        		<h1>了解法律政策</h1>
+		       		</div>
+		        	<div class="cardCenterP3">擅长处理个人贷和企业贷</div>
+		        </div>
+		        <!--竖线-->	
+		        <div class="xian"></div>
+		        <!--卡片右侧-->
+		        <div class="cardRight">
+		        	<h1><span>￥</span>500</h1>
+		        	<h2>定金（元）</h2>
+		        </div>
+	      	</div>
+    	</div>
+    	<!--已选经纪人卡片-->
+    	
+    	<!--债权详情标题-->
+    	<div class="newHead">
+	        <p class="new11 newHeadActiveP">债权详情</p>
+	    </div>
+     	<!----------------------------------------债权详情卡片-->
+     	<div class="newCard" style="margin-bottom: 0;">
+          <div class="loanTotal">
+            <h3><span style="font-size: .2rem;">385948</span><i style="padding-left: .08rem;">本金（元）</i></h3>
+            <b></b>
+            <h3><span>8000</span><i>利息（元）</i></h3>
+            <b></b>
+            <h3><span style="margin-bottom: 0.02rem;">3 <b style="font-size: .12rem;font-weight:normal;">年</b></span><i>借款周期</i></h3>
+          </div>
+        </div>
+        <!----------------------------------------债权详情卡片-->
+ 		<div class="loanDetialList"> 
+ 			<ul class="loanDetialListLeft">
+ 				<li>债权人</li>
+ 				<li>债权人联系方式</li>
+ 				<li>债务人</li>
+ 				<li>债务人联系方式</li>
+ 				<li>债权种类</li>
+ 				<li>期望还款需求</li>
+ 				<li>债权发生地</li>
+ 				<li>发布日期</li>
+ 				<li>债权编号</li>
+ 			</ul>
+ 			<ul class="loanDetialListRight">
+ 				<li>张三</li>
+ 				<li>18646582155</li>
+ 				<li>李四</li>
+ 				<li>13545652148</li>
+ 				<li>个人/文化收藏</li>
+ 				<li>提货卡</li>
+ 				<li>北京</li>
+ 				<li>2019-3-22</li>
+ 				<li>13735-26</li>
+ 			</ul>
+ 		</div>
+    </section>
+    <div class="cancelOrder">
+    	<div class="common-button cancelOrders">取消订单</div>
+    </div>
+    
+    <!--点击取消订单弹出遮罩层-->
+    <div class="chooseIdentity">
+    	<div class="sureBox">
+          	<div class="sureQst">
+	            	您是否要取消订单
+          	</div>
+	        <div class="sureNoBox">
+	            <p class="closeMask">取消</p>
+	            <p class="routerRenzheng">确定</p>
+	        </div>
+      </div>
+    </div>
+    
+</div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/info.js"></script>
+<script>
+ $(function(){
+	//点击取消遮罩层消失
+ 	$(".closeMask").click(function(){
+ 		$(".chooseIdentity").stop().fadeOut(300);
+ 	});
+ 	//点击取消订单遮罩层出现
+ 	$(".cancelOrders").click(function(){
+ 		$(".chooseIdentity").stop().fadeToggle(300);
+ 	});
+ })
+</script>
